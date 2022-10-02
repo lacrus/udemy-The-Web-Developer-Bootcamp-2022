@@ -1,0 +1,143 @@
+/* UNIVERSAL SELECTOR */
+/* * {
+    background-color: cyan;
+} */
+
+/* ELEMENT SELECTOR */
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+/* span {
+    color: #457b9d;
+} */
+
+/* Element List */
+h1, h2 {
+    color: #1d3557;
+}
+
+/* ID SELECTOR */
+#signup {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+/* CLASS SELECTOR */
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+/* DESCENDANT SELECTOR */
+.post a {
+    color: #a8dadc;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer a {
+    color: #e63946;
+}
+
+/* ADJACENT SELECTOR */
+input+button {
+    background-color: pink;
+}
+
+h2+button {
+    font-size: 20px;
+}
+
+/* DIRECT DESCENDANT SELECTOR - Direct Child*/
+footer>a {
+    color: #a8dadc;
+}
+
+/* ATTRIBUTE SELECTOR */
+input[type="password"] {
+    color: rgb(97, 194, 186);
+}
+
+label[for="search"] {
+    color: rgb(247, 4, 4);
+}
+
+/* elementos con un href que contenga google */
+a[href*="google"] {
+    color: magenta;
+}
+
+/* |elementos con un href que termine en .com */
+a[href$=".com"] {
+    background-color: black;
+}
+
+/* PSEUDO CLASSES */
+/* pseudo estilo hover */
+button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+/* tambien puede ser mas especifico y aplicar el hover a un button que este dentro de un .post */
+.post button:hover {
+    background-color: yellow;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* pseudo estilo active */
+button:active {
+    background-color: #6b705c;
+}
+
+/* pseudo checked Checkbox, cuando está marcado */
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px hotpink;
+}
+
+input:checked + label {
+    color: hotpink;
+}
+
+/* pseudo estilo nth-of-type */
+.post:nth-of-type(3n+2) {
+    background-color: #ee9b00;
+}
+
+/* PSEUDO ELEMENTS  */
+span::after {
+    content:"<-Span";
+    color: rgb(255, 255, 255);
+}
+
+span::before {
+    content:"Span->";
+    color: rgb(255, 255, 255);
+}
+
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: hotpink;
+}
+
+*::selection {
+    background-color: #0caa4e;
+}
+
+/* !important & Inline Styles */
+button {
+    background-color: magenta !important;
+}

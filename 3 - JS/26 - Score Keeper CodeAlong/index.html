@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .ganador {
+            Color: green
+        }
+        .perdedor {
+            Color: red
+        }
+    </style>
+    <title>Score Keeper</title>
+</head>
+
+<body>
+    <!-- 
+        1-ignorar el estilo
+        2-agregar 3 botones (suma jugador 1 - suma jugador 2 - reset)
+        3-agregar h1 que lleve el conteo de puntos (1 - 2)
+        4-agregar un selector de "jugando a: 1-3-5-7-9"
+
+     -->
+
+
+    <h1>Contador de Puntos</h1>
+    <h2><span id="puntosJ1">0</span> a <span id="puntosJ2">0</span></h2>
+    <label for="limitePuntos">Jugando a:</label>
+    <select name="limitePuntos" id="limitePuntos">
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="5" selected>5</option>
+        <option value="7">7</option>
+        <option value="9">9</option>
+    </select>
+    <br>
+
+    <button id="boton1" enabled>+ Equipo 1</button>
+    <button id="boton2">+ Equipo 2</button>
+    <button id="boton3">Volver a empezar</button>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

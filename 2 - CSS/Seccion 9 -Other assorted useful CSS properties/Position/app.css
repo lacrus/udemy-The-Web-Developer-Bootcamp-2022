@@ -1,0 +1,47 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle {
+    background-color: #81b29a;
+}
+
+#static #middle {
+    /* position: static; */
+    /* podemos ver que por mas que el propiedad esta comentada, 
+    el elemento no se mueve porque por defecto es de tipo static */
+    top: 100px;
+    left: 100px;
+}
+
+#relative #middle {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#absolute #middle {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#absolute {
+    position: relative;
+}
+
+#fixed #middle {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#sticky #middle {
+    position: sticky;
+    top: 30px;
+}

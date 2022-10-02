@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>55 - Form Marathon</title>
+</head>
+
+<body>
+    <h1>Registro de Carerra!</h1>
+    <form action="/hpoña">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="primernombre" name="apellido" required>
+        </div>
+
+        <p>Selecciona el tipo de carrera:</p>
+
+        <div>
+            <input type="radio" id="corta" name="tipocarrera" value="5k">
+            <label for="corta">Carrera corta 5K</label>
+            <br>
+            <input type="radio" id="mediamaraton" name="tipocarrera" value="mediamaraton">
+            <label for="mediamaraton">Media Maraton</label>
+            <br>
+            <input type="radio" id="maraton" name="tipocarrera" value="maraton">
+            <label for="maraton">Maraton</label>
+        </div>
+        <div>
+            <label for="email">Direccion de correo electronico</label>
+            <input type="email" name="email" id="email" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div>
+            <label for="edad">Seleccionar grupo de edad</label>
+            <select name="edad" id="edad">
+                <option value="menos18">Menores 18 años</option>
+                <option value="adolecentes">18 a 25</option>
+                <option value="adultos">25 a 50</option>
+                <option value="senior">50 en adelante</option>
+            </select>
+        </div>
+
+        <button>Registrarse!</button>
+    </form>
+
+
+
+</body>
+
+</html>

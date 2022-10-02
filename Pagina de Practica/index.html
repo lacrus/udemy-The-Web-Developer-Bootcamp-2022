@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <title>Pagina de Prueba</title>
+
+</head>
+
+<body>
+    <header>
+        <div>a</div> 
+    </header>
+
+    <section>
+        <ul>lista sin ordenar
+            <li>valor 1
+                <ol>lista ordenada dentro de lista desordenada
+                    <li>valor 1</li>
+                </ol>
+            </li>
+            <li>valor 2
+                <ol>
+                    lista ordenada dentro de lista desordenada
+                    <li>valor 1</li>
+                </ol>
+            </li>
+        </ul>
+        <ol>lista ordenada
+            <li>valor 1
+                <ul>lista desordenada dentro de lista ordenada
+                    <li>valor 1</li>
+                </ul>
+            </li>
+            <li>valor 2</li>
+            <li>valor 3</li>
+        </ol>
+    </section>
+
+    <section>
+        <nav>
+            <a href="https://www.google.com/?hl=es">deberia ser un link a google</a>
+            <br>
+            <input type="button" value="Boton a ningun lado">
+        </nav>
+    </section>
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>titulo 1 de tabla</th>
+                    <th>titulo 2 de tabla</th>
+                    <th> titulo 3 de tabla</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2" style="border: 2px solid green;">fila 1-2 col 1</td>
+                    <td style="border: 2px solid green;">fila 1 col 2</td>
+                    <td style="border: 2px solid green;">fila 1 col 3</td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2" style="border: 2px solid green;">fila 2-3 col 2-3</td>
+                    <td>este estaria de ma</td>
+                </tr>
+                <tr>
+                    <td style="border: 2px solid green;">fila 4</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" style="border: 2px solid green;">resultado col 1-2</td>
+                    <td style="border: 2px solid green;">resultado col 3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section>
+        <form action="/adondevaelformulario">
+            <label for="Nombre/Apodo">Nombre</label>
+            <input type="text" name=Nombre id="Nombre/Apodo" placeholder="Nombre / Apodo">
+            <br>
+            <label for="Apellido">Apellido</label>
+            <input type="text" name="Apellido" id="Apellido" placeholder="Del que no te reconocio">
+            <br>
+            <label for="password">Contraseña</label>
+            <input type="password" name="Contraseña" id="password" required>
+            <br>
+            <label for="email">Correo Electronico</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <input type="checkbox" id="checkbox1">
+            <label for="checkbox1">checkbox 1</label>
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">checkbox 2</label>
+            <br>
+            <label for="radio1">Radio 1</label>
+            <input type="radio" id="radio1" name="radio" value="radio1">
+            <label for="radio2">Radio 2</label>
+            <input type="radio" id="radio2" name="radio" value="radio2">
+            <label for="radio3">Radio 3</label>
+            <input type="radio" id="radio3" name="radio" value="radio3">
+            <br>
+            <select name="seleccionar" id="seleccionar" required>
+                <option value="">--Seleccione un desplegable--</option>
+                <option value="seleccion1">Desplegable 1</option>
+                <option value="seleccion2">Despegable 2</option>
+            </select>
+            <br>
+            <button class=botonclase>Apretame</button>
+        </form>
+    </section>
+
+    <h2>h2</h2>
+    <h2>otro h2</h2>
+    <h2>otro h2 mas</h2>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam suscipit temporibus similique assumenda magni
+        eaque ex alias id enim pariatur illum nemo dolorum possimus numquam, impedit nesciunt natus doloribus. Laborum!
+        At neque repudiandae quam dignissimos, quas assumenda iusto minima commodi delectus odio perspiciatis ullam
+        blanditiis facilis qui ex quod ab quasi. Dolorum fugit error laborum consectetur provident cumque aliquid
+        fugiat?<span>HAY UN SPAN</span> con padding y margin, tambien con width y height pero estos dos no lo tienen en
+        cuenta por ser un elemento inline, podria darle la propiedad de block con la propiedad display
+        Quidem, quod asperiores corporis inventore excepturi in aliquam neque deleniti consectetur dolorum quis.
+        Corrupti ex fugit officiis deserunt perferendis voluptatem labore nam blanditiis reprehenderit, fuga quae
+        mollitia, voluptate eligendi temporibus.</p>
+
+
+    <footer>
+        <img id=primerimagen
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF5uMwlrT5NUcjRgGE6xggthKsUuvS2vK0AQ&usqp=CAU"
+            alt="Maquina de tatuaje">
+    </footer>
+
+
+</body>

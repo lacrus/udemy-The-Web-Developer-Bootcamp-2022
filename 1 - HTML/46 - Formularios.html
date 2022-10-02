@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>46 - Formularios</title>
+</head>
+
+<body>
+    <h1>Bootcamp Udemy</h1>
+    <h2>46 - Formularios</h2>
+
+    <form action="/merca">
+        <!-- esto son label con el tributo for y name es mas estandar y comun hacerlo asi-->
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" placeholder="Ingresa tu nombre" name="nombre">
+        <br>
+        <label for="edad">Edad</label>
+        <input id="edad" type="number" placeholder="Ingresa tu edad" name="edad">
+        <br>
+
+        <!-- esto es un label sin los atributos for y name -->
+        <label>Usuario
+            <input type="text" placeholder="Ingresa tu usuario" name="usuario">
+        </label>
+        <br>
+        <label>Contraseña
+            <input type="password" placeholder="Ingresa tu contraseña" name="contraseña">
+        </label>
+        <br>
+        <label>Color
+            <input type="color" name="color">
+        </label>
+        <br>
+
+        <!-- Botones - buttons -->
+        <!--boton a partir de una etiqueta-->
+        <button>Button tipo etiqueta</button>
+        <br>
+        <!--boton a partir de un input-->
+        <input type="submit" value="Button tipo input">
+    </form>
+    <hr>
+    <!--Button afuera de un formulario-->
+    <button>Boton afuera del formulario</button>
+    <hr>
+
+    <!--Formulario para usar los motores de busqueda de los sitios ej Google - Reddit-->
+    <!--lo importante es usar el atributo NAME en el input y el ACTION en el form -->
+    <h3>Hijacking searches</h3>
+    <form action="https://www.google.com/search">
+        <label for="busquedaengoogle">Busqueda en Google</label>
+        <input type="text" name="q" id="busquedaengoogle">
+        <button>Busqueda en Google</button>
+    </form>
+    <br>
+    <form action="https://www.reddit.com/search/">
+        <label>Busqueda en Reddit
+            <input type="text" name="q">
+        </label>
+        <button>Busqueda en Reddit</button>
+    </form>
+    <br>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query" placeholder="Busqueda en YouTube">
+        <button>Busqueda en YouTube</button>
+    </form>
+    <hr>
+
+    <h3>Otros INPUTS</h3>
+    <!--Input CHECKBOX-->
+    <form action="/checkbox">
+        <input type="checkbox" name="checkbox1" id="checkbox1">
+        <label for="checkbox1">atributo checkbox1</label>
+        <button>atributo checkbox</button>
+    </form>
+    <form action="/checkbox">
+        <label>
+            <input type="checkbox" name="checkbox" checked>checkbox
+        </label>
+        <button>checkbox</button>
+    </form>
+
+    <!--input RADIO y ATRIBUTO value (sirve para darle un nombre de salida al radio que elegimos ya )-->
+    <!--para relacionar todos los radio hay que poner el atributo name igual en todos los input -->
+    <form action="/radio">
+        <label for="chico">Chico</label>
+        <input type="radio" name="talleremera" id="chico" value="chico">
+        <label for="radio2">Medio</label>
+        <input type="radio" name="talleremera" id="radio2" value="medio">
+        <label>Grande
+            <input name="talleremera" type="radio" id="radio3" value="grande">
+        </label>
+        <button>Atributo Radio</button>
+    </form>
+
+    <!--SELECT - menu despegable-->
+    <form action="/select">
+        <label for="comidas">Escoge una opcion</label>
+        <select name="comidas" id="comidas">
+            <option value="">--Por favor escogue una opcion--</option>
+            <option value="pescado">Pescado</option>
+            <option value="carne">Carne</option>
+        </select>
+        <button>menu despegable</button>
+    </form>
+
+    <!--input Range-->
+    <form action="/cuantosaldia">
+        <p>
+            <label for="cuantosaldia">cuandos fumas al dia?</label>
+            <input type="range" name="cuantosaldia" id="cuantosaldia" min="0" max="10" step="2">
+            <button>Enviar rango</button>
+        </p>
+    </form>
+
+    <!--Text Area-->
+    <form action="/comentarios">
+        <p>
+            <label for="comentarios">Algun comentario que quisiera dejarnos!?</label> <br>
+            <textarea name="comments" id="comentarios" cols="30"
+                rows="10">Depositelo aqui! que nadie lo leera</textarea>
+            <button>Enviar comentarios</button>
+        </p>
+
+    </form>
+
+
+
+    <h3>Validaciones - Validations</h3>
+    <form action="/validaciones">
+        <!-- required -->
+        <div>
+            <label for="primernombre">Primer nombre</label>
+            <input type="text" name="1er" id="primernombre" required>
+        </div>
+        <!-- minlength y maxlength -->
+        <div>
+            <label for="segundonombre">Segundo nombre</label>
+            <input type="text" id="segundonombre" name="2do" minlength="2" maxlength="5">
+        </div>
+        <!-- validaciones que vienen por defecto -->
+
+        <input type="email" name="email" required>
+        <br>
+        <input type="url" name="url" required>
+        <button>Enviar</button>
+
+
+    </form>
+
+</body>
+
+</html>

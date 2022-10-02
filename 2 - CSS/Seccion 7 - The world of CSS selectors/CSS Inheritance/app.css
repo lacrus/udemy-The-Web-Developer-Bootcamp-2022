@@ -1,0 +1,11 @@
+body {
+    color: purple;
+}
+
+section {
+    color: rgb(165, 216, 132);
+}
+
+button , input {
+    color: inherit;
+}

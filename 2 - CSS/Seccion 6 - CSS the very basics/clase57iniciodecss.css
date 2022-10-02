@@ -1,0 +1,34 @@
+h1 {
+    text-align: center;
+    font-weight: normal;
+    text-decoration: overline underline wavy;
+    letter-spacing: 5px;
+    font-size: 80px;
+    /* pones varias fuentes como respaldo por si el navegador no tiene esa fuente especifica */
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+h2 {
+    /* sistema HEX hexadecimal */
+    color: #0f5679;
+    /* sistema rgb */
+    background-color: rgb(89, 151, 0);
+    /* font-family: verdana; */
+    font-family: fantasy;
+}
+
+h3 {
+    lett background-color: lawngreen;
+}
+
+button {
+    color: gray;
+    background-color: hotpink;
+}
+
+p {
+    text-align: justify;
+    line-height: 2;
+    letter-spacing: 5px;
+    color: olive;
+}
