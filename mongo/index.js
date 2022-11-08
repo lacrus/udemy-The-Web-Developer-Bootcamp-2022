@@ -89,13 +89,13 @@ const Usuario = mongoose.model("Usuario", usuarioSchema);
 // const delete1 = await Usuario.remove({ email: "a" }); // .remove DEPRECATED
 // console.log(delete1);
 
-const delete2 = await Usuario.deleteOne({ email: "b" });
-console.log(delete2);
+// const delete2 = await Usuario.deleteOne({ email: "b" });
+// console.log(delete2);
 
-const delete3 = await Usuario.deleteMany({
-  fechaNacimiento: { $gte: 32345678 },
-});
-console.log(delete3);
+// const delete3 = await Usuario.deleteMany({
+//   fechaNacimiento: { $gte: 32345678 },
+// });
+// console.log(delete3);
 
-const delete4 = await Usuario.findByIdAndDelete("elid");
-console.log(delete4);
+// const delete4 = await Usuario.findByIdAndDelete("elid");
+// console.log(delete4);
